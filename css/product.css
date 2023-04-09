@@ -17,7 +17,9 @@ img {
   position: relative;
   margin: auto;
 }
-
+.slideshow-container img {
+  object-fit: cover;
+}
 .prev,
 .next {
   cursor: pointer;

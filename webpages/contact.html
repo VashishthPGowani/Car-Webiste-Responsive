@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Green Garden House</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
     <nav>
@@ -15,9 +16,29 @@
     </nav>
     <main>
       <h1>Contact Us</h1>
+      <form
+        action="response.html"
+        method="get"
+        name="contact_info"
+        id="contact_form"
+      >
+        <label for="f_name">First Name</label>
+        <input type="text" name="f_name" id="f_name" autofocus />
+
+        <label for="l_name">Last Name</label>
+        <input type="text" name="l_name" id="l_name" autofocus />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+
+        <label for="message">Your Message</label>
+        <textarea name="message" rows="5" cols="2"></textarea>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
     </main>
     <footer>
       <p id="copyright">Copyright &copy; Porthfolio 2023</p>
     </footer>
+    <script src="../js/contact.js"></script>
   </body>
 </html>

@@ -1,0 +1,34 @@
+#contact_form {
+  width: 70%;
+  margin-left: 35%;
+  padding: 10px;
+  color: white;
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-column-gap: 15px;
+}
+label + * {
+  margin-bottom: 15px;
+  margin-right: 70%;
+  color: white;
+  display: inline-block;
+}
+input,
+select {
+  margin-right: 0.5em;
+}
+input {
+  width: 20em;
+}
+input.left {
+  width: 1em;
+  padding-left: 0;
+}
+input[type="button"] {
+  justify-self: start;
+}
+#submit {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 7%;
+}
