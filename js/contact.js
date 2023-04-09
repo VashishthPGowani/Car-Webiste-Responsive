@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  function IsEmail(email) {
+$(document).ready(() => {
+  function IsEmailvalid(email) {
     //input validation
     let emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
     if (!emailPattern.test(email)) {
@@ -9,6 +9,7 @@ $(document).ready(function () {
     }
   }
   $("#submit").on("click", function () {
+    debugger
     //all form inputs
     let fname = document.forms["contact_form"]["f_name"].value;
     let lname = document.forms["contact_form"]["l_name"].value;
@@ -25,7 +26,7 @@ $(document).ready(function () {
     } else if (email == null || email == "") {
       $("#email").after('<span class="error">This is required field</span>');
       return false;
-    } else if (IsEmail(email) == false) {
+    } else if (IsEmailvalid(email) == false) {
       $("#email").after(
         '<span class="error">Must Be A Valid Email Address.</span>'
       );

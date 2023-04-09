@@ -3,9 +3,6 @@
   margin-left: 35%;
   padding: 10px;
   color: white;
-  display: grid;
-  grid-template-columns: 150px auto;
-  grid-column-gap: 15px;
 }
 label + * {
   margin-bottom: 15px;
@@ -31,4 +28,8 @@ input[type="button"] {
   background-color: darkgoldenrod;
   color: white;
   padding: 7%;
+}
+
+.error{
+  display: inline;
 }
