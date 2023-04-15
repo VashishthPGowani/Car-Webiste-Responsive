@@ -20,11 +20,12 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].classList.add("d-none");
   }
   for (i = 0; i < dotts.length; i++) {
     dotts[i].className = dotts[i].className.replace("active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dotts[slideIndex - 1].className += " active";
+  slides[slideIndex - 1].classList.remove("d-none");
+  slides[slideIndex - 1].classList.add("d-block");
+  dotts[slideIndex - 1].classList.add("active");
 }
