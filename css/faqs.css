@@ -21,21 +21,21 @@ h1 {
   margin: 2%;
   font-size: 2em;
 }
-h2 {
+h3 {
   font-size: 120%;
   padding: 0.25em 0 0.25em 25px;
   cursor: pointer;
   background: url(../imgs/plus.png) no-repeat left center;
 }
-h2.minus {
+h3.minus {
   background: url(../imgs/minus.png) no-repeat left center;
 }
-.click {
+a {
   color: black;
   text-decoration: none;
 }
-.click:focus,
-.click:hover {
+a:focus,
+a:hover {
   color: blue;
 }
 
@@ -46,12 +46,6 @@ div.open {
   display: block;
 } */
 
-ul {
-  padding-left: 45px;
-}
-li {
-  padding-bottom: 0.25em;
-}
 p {
   padding-bottom: 0.25em;
   padding-left: 25px;
