@@ -9,7 +9,6 @@ $(document).ready(() => {
     }
   }
   $("#submit").on("click", function () {
-    debugger
     //all form inputs
     let fname = document.forms["contact_form"]["f_name"].value;
     let lname = document.forms["contact_form"]["l_name"].value;
@@ -18,13 +17,19 @@ $(document).ready(() => {
     $(".error").remove();
     //to remove any existing error message.
     if (fname == null || fname == "") {
-      $("#f_name").after('<span class="text-danger">This is required field</span>');
+      $("#f_name").after(
+        '<span class="text-danger">This is required field</span>'
+      );
       return false;
     } else if (lname == null || lname == "") {
-      $("#l_name").after('<span class="text-danger">This is required field</span>');
+      $("#l_name").after(
+        '<span class="text-danger">This is required field</span>'
+      );
       return false;
     } else if (email == null || email == "") {
-      $("#email").after('<span class="text-danger">This is required field</span>');
+      $("#email").after(
+        '<span class="text-danger">This is required field</span>'
+      );
       return false;
     } else if (IsEmailvalid(email) == false) {
       $("#email").after(
