@@ -29,3 +29,8 @@ function showSlides(n) {
   slides[slideIndex - 1].classList.add("d-block");
   dotts[slideIndex - 1].classList.add("active");
 }
+
+
+$(document).ready(()=>{
+  $( "#tabs" ).tabs();
+})
