@@ -30,6 +30,9 @@ input[type="button"] {
   padding: 7%;
 }
 
-.error{
+.error {
   display: inline;
+}
+span {
+  color: red;
 }

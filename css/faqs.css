@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#faqs {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  width: 550px;
+  margin: 0 auto;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 15px 25px;
+}
+#copy {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+h1 {
+  font-size: 150%;
+  text-align: center;
+  margin: 2%;
+  font-size: 2em;
+}
+h2 {
+  font-size: 120%;
+  padding: 0.25em 0 0.25em 25px;
+  cursor: pointer;
+  background: url(../imgs/plus.png) no-repeat left center;
+}
+h2.minus {
+  background: url(../imgs/minus.png) no-repeat left center;
+}
+.click {
+  color: black;
+  text-decoration: none;
+}
+.click:focus,
+.click:hover {
+  color: blue;
+}
+
+/*div {
+  display: none;
+}
+div.open {
+  display: block;
+} */
+
+ul {
+  padding-left: 45px;
+}
+li {
+  padding-bottom: 0.25em;
+}
+p {
+  padding-bottom: 0.25em;
+  padding-left: 25px;
+}
