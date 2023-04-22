@@ -14,22 +14,25 @@ $(document).ready(() => {
     let lname = document.forms["contact_form"]["l_name"].value;
     let email = document.forms["contact_form"]["email"].value;
     //below code is responsible for validate form input.
-    $(".error").remove();
+    $(".text-danger").remove();
     //to remove any existing error message.
     if (fname == null || fname == "") {
-      $("#f_name").after('<span class="error">This is required field</span>');
+      $("#f_name").after('<span class="text-danger">This is required field</span>');
       return false;
     } else if (lname == null || lname == "") {
-      $("#l_name").after('<span class="error">This is required field</span>');
+      $("#l_name").after('<span class="text-danger">This is required field</span>');
       return false;
     } else if (email == null || email == "") {
-      $("#email").after('<span class="error">This is required field</span>');
+      $("#email").after('<span class="text-danger">This is required field</span>');
       return false;
     } else if (IsEmailvalid(email) == false) {
       $("#email").after(
-        '<span class="error">Must Be A Valid Email Address.</span>'
+        '<span class="text-danger">Must Be A Valid Email Address.</span>'
       );
       return false;
+    }
+    else{
+      alert("Thank you for contacting us we will get back to you in 24 bussiness hours!");
     }
   });
 }); // end ready
