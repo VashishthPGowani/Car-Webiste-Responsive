@@ -68,3 +68,13 @@
     font-size: 11px;
   }
 }
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #c5c5c5;
+  text-align: center !important;
+}
+
+.ui-widget-header {
+  border: none;
+  background: none; 
+}
