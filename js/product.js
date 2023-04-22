@@ -1,33 +1,33 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let sldind = 1;
+showSlides(sldind);
 
 function plusSlides(n) {
-  showSlides((slideIndex += n));
+  showSlides((sldind += n));
 }
 
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+  showSlides((sldind = n));
 }
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dotts = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
+  let slds = document.getElementsByClassName("mySlides");
+  let tapka = document.getElementsByClassName("dot");
+  if (n > slds.length) {
+    sldind = 1;
   }
   if (n < 1) {
-    slideIndex = slides.length;
+    sldind = slds.length;
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.add("d-none");
+  for (i = 0; i < slds.length; i++) {
+    slds[i].classList.add("d-none");
   }
-  for (i = 0; i < dotts.length; i++) {
-    dotts[i].className = dotts[i].className.replace("active", "");
+  for (i = 0; i < tapka.length; i++) {
+    tapka[i].className = tapka[i].className.replace("active", "");
   }
-  slides[slideIndex - 1].classList.remove("d-none");
-  slides[slideIndex - 1].classList.add("d-block");
-  dotts[slideIndex - 1].classList.add("active");
+  slds[sldind - 1].classList.remove("d-none");
+  slds[sldind - 1].classList.add("d-block");
+  tapka[sldind - 1].classList.add("active");
 }
 
 

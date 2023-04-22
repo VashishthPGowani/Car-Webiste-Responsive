@@ -50,3 +50,16 @@ p {
   padding-bottom: 0.25em;
   padding-left: 25px;
 }
+
+footer{
+  font-family: Century Gothic, serif;
+  font-size: smaller;
+  color: #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 20px;
+  background-color: black;
+  text-align: center;
+}
